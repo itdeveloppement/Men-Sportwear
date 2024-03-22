@@ -137,9 +137,9 @@ h2 {
     font-size: 14px;
 }
 .pre-nav-chaussures {
-background-color: var(--firstOne);
-color: var(--firstThree);
-padding: 5px 20px;
+    background-color: var(--firstOne);
+    color: var(--firstThree);
+    padding: 5px 20px;
 }
 .pre-nav-baskets {
     background-color:var(--firstThree);
@@ -470,7 +470,10 @@ margin: 40px 0;
 }
 .compteur-info p {
     margin-top: 3px;
-    padding: 0 5px;
+    padding: 0 5px 0 0;
+}
+.compteur h4{
+    width: 100%;
 }
 
 
@@ -704,6 +707,9 @@ footer a {
 .main-produit p {
     margin: 0;
 }
+.main-produit h2 {
+    margin-bottom: 40px;
+}
 .main-produit .pre-nav {
     margin: 100px 8px 50px 8px;
 }
@@ -716,13 +722,11 @@ footer a {
     justify-content: space-between;
     align-items: center;
 }
-.produit-detail-title p {
-    font-size: 25px;
-}
 .produit-detail ul {
     padding:20px 0 0 20px
 }
 .produit-detail-title p {
+    font-size: 25px;
     color: var(--firstTwo);
     font-weight: 600;
     vertical-align: middle;
@@ -931,6 +935,7 @@ footer a {
     .categorie .btn-transparent {
         font-size: 14px;
     }
+        
     /* PAGE CATEGORIE CHAUSSURE */
     .main-categorie .categorie-card {
         width: 250px;
@@ -1015,7 +1020,9 @@ footer a {
         margin-bottom: 50px;
 
     }
-    
+    .compteur-info p {
+        font-size: 15px;
+    }
     /* PAGE CATEGORIE CHAUSSURE */
 
     /*categorie chaussure*/
@@ -1035,6 +1042,10 @@ footer a {
     /* PRODUIT */
     .avis-info {
         width: 80%;
+    }
+    .compteur-info p {
+        font-size: 12px;
+        background-color: chartreuse;
     }
  }
 
@@ -1097,12 +1108,16 @@ footer a {
         padding: 8%;
     }
     /*promo*/
-    .promo .large_50 {
+    .promo .large_45 {
+        width: 100%;
+    }
+    .promo .large_45 {
         width: 100%;
     }
     .promo-container-img {
         order: -1;
     }
+    
 
     /* marques*/
     .marques-logo {
@@ -1246,7 +1261,7 @@ footer a {
         padding: 8%;
     }
      /*promo*/
-     .promo .large_50 {
+     .promo .large_45 {
         width: 100%;
     }
     .promo-container-img {

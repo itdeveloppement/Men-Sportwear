@@ -386,7 +386,7 @@ function affichageDelais () {
     let compteurPromo = document.querySelector(".compteur");
     let template = '';
     template = `
-        <p class="compteur-titre">Il ne vous reste plus que : </p>
+        <h4 class="compteur-titre">Il ne vous reste plus que : </h4>
         <div class="compteur-info flex">
             <div class="flex">
                 <p class="compteur-jours">${duree.jours} jours | </p>

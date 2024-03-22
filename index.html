@@ -12,9 +12,9 @@
     <!-- link css hambergers-->
     <link rel="stylesheet" href="./assets/css/hamburgers.css"/>
     <!-- link css aos-->
-    <link href="./assets/dist/aos.css" rel="stylesheet">
+    <link href="./node_modules/aos/dist/aos.css" rel="stylesheet">
     <!-- link css leaflet carto-->
-    <link rel="stylesheet" href="./assets/dist/leaflet.css">
+    <link rel="stylesheet" href="./node_modules/leaflet/dist/leaflet.css">
     <!-- link css -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <!-- favicon et image à la racine du site-->
@@ -151,24 +151,28 @@
 
     <!-- section promotion -->
     <section class="promo flex">
-        <div class="promo-encart large_40">
+        <div class="promo-encart large_45">
             <h2><strong>Profitez de l’offre</strong></h2>
             <p class="promo-para-weight">L’ensembe jogging M’S noir disponible en plusieurs tailles</p>
             <p>Ce jogging alie confort légereté et douceur, pour du sport a l’exterieur comme pour les moments de détente a la maison</p>
             <a class="btn btn-transparent" href="./traveaux.html" title="lien vers la page du détail du produit">Voir le détail du produit</a>
             <div class="compteur flex">
             <!-- 
-                <p>Il ne vous reste plus que :</p>
-                <div class="compteur-info flex">
-                <p class="compteur-jours">${duree.jours} jour </p>
-                <p class="compteur-heures">${duree.heures} heure</p>
-                <p class="compteur-minutes">${duree.minutes} minutes</p>
-                <p class="compteur-secondes">${duree.secondes} secondes</p>
+            <h4 class="compteur-titre">Il ne vous reste plus que : </h4>
+            <div class="compteur-info flex">
+                <div class="flex">
+                    <p class="compteur-jours">${duree.jours} jours | </p>
+                    <p class="compteur-heures">${duree.heures} heures | </p>
+                <div>
+                <div class="flex">
+                    <p class="compteur-minutes">${duree.minutes} minutes | </p>
+                    <p class="compteur-secondes">${duree.secondes} secondes</p>
+                </div>
             </div> -->
             </div>
         </div >
 
-        <div class="promo-container-img large_50">
+        <div class="promo-container-img large_45">
             <img src="./assets/images/imagesSIte/Joogin-promo.jpg" alt="">
         </div>
     </section>
@@ -197,8 +201,8 @@
     </section>
      <!-- section about M'S-->
      <section class="about">
-        <h1><span>Men Sportswear</span> est le <span>specialiste</span> des vêtements, chaussures et équipements de sports pour hommes.</h1>
-        <p>Nous avons pour ambition de vous fournir le meilleur pour la pratique de vos <span><strong>activités sportives</strong> en intérieur comme en extérieur.</span><br> Nous proposons une large <strong>gamme de <span>vêtements, chaussures et équipements pour hommes.</span></strong><br> Nous travaillons avec <strong>les plus grandes marques</strong> et nous disposons de nos propres ateliers de fabrication.<br> Notre nouvelle gamme de produits @utdoor pour les <strong>activités de plein air</strong>, allient <span>confort, respirabilité et protection</span> grâce a nos matériaux à la pointe de la technologie textile.</p>
+        <h1><span>Men Sportswear</span> est le specialiste des <span>vêtements, chaussures et équipements</span> de sports pour hommes.</h1>
+        <p>Nous avons pour ambition de vous fournir le meilleur pour la pratique de vos <span><strong>activités sportives</strong> en intérieur comme en extérieur.</span><br> Nous proposons une large <strong>gamme de vêtements, chaussures et équipements <span>pour hommes.</span></strong><br> Nous travaillons avec <strong>les plus grandes marques</strong> et nous disposons de nos propres ateliers de fabrication.<br> Notre nouvelle gamme de produits @utdoor pour les <strong>activités de plein air</strong>, allient <span>confort, respirabilité et protection</span> grâce a nos matériaux à la pointe de la technologie textile.</p>
      </section>
     <!-- section contact -->
     <section class="contact flex">
@@ -332,8 +336,8 @@
     </footer>
     <!-- lien fichier java script et attente du chargement html avant js-->
     <script type="module" src="./assets/js/fonctionsAffichage.js" defer></script>
-    <script src="./assets/dist/aos.js" defer></script>
-    <script src="./assets/dist/leaflet.js" defer></script>
+    <script src="./node_modules/aos/dist/aos.js" defer></script>
+    <script src="./node_modules/leaflet/dist/leaflet.js" defer></script>
     <script type="module" src="./assets/js/app.js" defer></script>
 </body>
 </html>

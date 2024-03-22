@@ -11,11 +11,12 @@
     <link rel="canonical" href="http://127.0.0.1:5500/index.html" />
       <!-- non indexation de la page-->
       <meta name="**robots**" content="noindex">
-      <link rel="stylesheet" href="./assets/css/hamburgers.css"/>
+    <!-- link css hambergers-->
+    <link rel="stylesheet" href="./assets/css/hamburgers.css"/>
     <!-- link css aos-->
-    <link href="./assets/dist/aos.css" rel="stylesheet">
+    <link href="./node_modules/aos/dist/aos.css" rel="stylesheet">
     <!-- link css leaflet carto-->
-    <link rel="stylesheet" href="./assets/dist/leaflet.css">
+    <link rel="stylesheet" href="./node_modules/leaflet/dist/leaflet.css">
     <!-- link css -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <!-- favicon et image à la racine du site-->
@@ -139,7 +140,8 @@
 </footer>
 <!-- lien fichier java script et attente du chargement html avant js-->
 <script type="module" src="./assets/js/fonctionsAffichage.js" defer></script>
-<script src="./assets/dist/leaflet.js" defer></script>
-<script type="module" src="./assets/js/app.js" defer></script>
+<script src="./node_modules/aos/dist/aos.js" defer></script>
+<script src="./node_modules/leaflet/dist/leaflet.js" defer></script>
+<script type="module" src="./assets/js/traveaux.js" defer></script>
 </body>
 </html>
