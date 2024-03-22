@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- titre max 55/65 caracteres -->
+    <title>Gamme baskets | Homme | Activités sportives intérieur, extérieur</title>
+    <!-- meta description max 160 caracteres -->
+    <meta name="description" content="Decouvrer toute la gamme de nos meilleurs chaussures. Nous travaillons avec les plus grandes marques et nous disposons de nos propres ateliers de fabrication.">
+
+    <!-- url canonical -->
+    <link rel="canonical" href="http://127.0.0.1:5500/categories.template.html" />
+    <!-- link css hambergers-->
+    <link rel="stylesheet" href="./assets/css/hamburgers.css"/>
+    <!-- link css leaflet carto-->
+    <link rel="stylesheet" href="./node_modules/leaflet/dist/leaflet.css">
+    <!-- link css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- favicon et image à la racine du site-->
+    <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+    
+    <!-- ne pas oublier -->
+        <!-- sémentique des balise avec notament strong et em -->
+        <!-- optimiser les videos et les images (taille, poids et nom du fichier)-->
+        <!-- renseigner les attributes alt des images et title des href -->
+        <!-- https://schema.org/ -->
+        <!-- fichier sitemap en xml (description)-->
+        <!-- faire un fichier Robots.txt (accessibilité des pages)-->
+        <!-- avoir des liens entrant dans le site -->
+
+    <!-- rengement code -->
+    <!-- export et import des fonctions -->
+
+       
+<body>
+    <!-- HEADER -->
+    <header>
+        <section class="nav-bar flex">
+            <div class="logo">
+                <a href="index.html" title="lien vers la page d'accueil"><img src="./assets/images/imagesSIte/logo-blanc.png" alt="logo de la société Men Sportswear"></a>
+            </div>
+            <!-- nav centrale -->
+            <nav class="nav-central">
+                <ul class="flex">
+                    <li><a href="./index.html" title="lien vers la page accueil">Accueil</a></li>
+                    <li><a href="./categorie.template.html" title="lien vers la page categorie chaussures">Chaussures</a></li>
+                    <li><a href="./traveaux.html" title="lien vers la page categorie vetement">Vetements</a></li>
+                    <li><a href="./traveaux.html" title="lien vers la page categorie accessoires">Accessoires</a></li>
+                    <li><a href="./traveaux.html" title="lien vers la page categorie @outdoor">@utdoor</a></li>
+                </ul>
+            </nav>
+            <!-- nav droite -->
+            <nav class="nav-right flex">
+                <ul class="flex">
+                    <li><a href="./traveaux.html" title="lien vers la page panier"><img src="./assets/images/imagesSIte/header-pannier.png" alt="illustration d'un paneir de commande"></a></li>
+                    <li><a href="./traveaux.html" title="lien vers la page compte"><img class="nav-right__img" src="./assets/images/imagesSIte/header-account.png" alt="illustration d'un compte client"></a></li>
+                </ul>
+                <!-- changer la typo -->
+                <button id="btn-typo" type="button">Changer la typo</button>
+            </nav>
+        <!-- burger import burger Collapse -->
+        <button class="header-burger header-burger--is-open hamburger hamburger--collapse" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+        </button> 
+    </section>
+    <!-- modale menu-->
+    <section class="header-modal">
+        <!-- changer la typo -->
+        <button id="btn-typo" type="button">Changer la typo</button>
+        <!-- nav haut -->
+        <nav class="nav-height">
+            <ul>
+                <li><a href="./index.html" title="lien vers la page accueil">Accueil</a></li>
+                <li><a href="./categorie.template.html" title="lien vers la page categorie chaussures">Chaussures</a></li>
+                <li><a href="./traveaux.html" title="lien vers la page categorie vetement">Vetements</a></li>
+                <li><a href="./traveaux.html" title="lien vers la page categorie accessoires">Accessoires</a></li>
+                <li><a href="./traveaux.html" title="lien vers la page categorie @outdoor">@utdoor</a></li>
+            </ul>
+        </nav>
+        <!-- nav bas -->
+        <nav class="nav-bottom">
+            <ul class="flex">
+                <li><a href="./traveaux.html" title="lien vers la page panier"><img src="./assets/images/imagesSIte/header-pannier.png" alt="illustration d'un paneir de commande"></a></li>
+                <li><a href="./traveaux.html" title="lien vers la page compte"><img class="nav-right__img" src="./assets/images/imagesSIte/header-account.png" alt="illustration d'un compte client"></a></li>
+            </ul>
+        </nav>
+    </section>
+    </header> 
+     <!-- MAIN -->
+     <main class="main-categorie">
+        <div class="pre-nav flex">
+            <div class="flex">
+                <a class="pre-nav-chaussures" href="categorie.template.html" title="lien vers la page chaussures">Chaussures ></a>
+                <a class="pre-nav-baskets" href="" title="lien vers la page bascket" >Baskets ></a>
+            </div>
+            <p>Prix <span id="iconPrix"></span></p>
+        </div>
+      
+          <!-- cards produit dans une categorie-->
+        <section class="categorie-produit flex">
+          
+    <!--  
+            <a class="categorie-card" href="produit.template.html?name=${card.nom}" title="lien vers la fiche produit">
+                <article>
+                    <div class="categorie-card-container-img">
+                        <img src="./assets/images/imagesProduits/${card.photo}" alt="photo de bascket">
+                    </div>
+                    <div class="categorie-card-title flex">
+                        <p class="categorie-card-name">${card.nom}</p>
+                        <p class=categorie-card-prix>${card.prix} €</p>
+                    </div>
+                    <p categorie-card-description>${card.description}</p>
+                </article>
+            </a> 
+    -->
+
+        </section>
+    </main>
+    <!-- FOOTER -->
+    <footer >
+        <div class="footer-logo">
+            <a href="./index.html"><img src="./assets/images/imagesSIte/logo-blanc.png" alt="logo de la société Men Sportswear"></a>
+        </div>
+        <h4>Retrouvez nos boutiques près de chez vous</h4>
+        <!-- insertion carte -->
+        <div id="mapid"></div> 
+        <div class=" footer-info flex">
+            <!-- nav left -->
+            <nav class="footer-nav-left large_30">
+                <h4>Plan du site</h4>
+                <ul>
+                    <li><a href="./index.html" title="lien vers la page accueil">Accueil</a></li>
+                    <li><a href="./categorie.template.html" title="lien vers la page categorie chaussures">Chaussures</a></li>
+                    <li><a href="./traveaux.html" title="lien vers la page categorie vetement">Vetements</a></li>
+                    <li><a href="./traveaux.html" title="lien vers la page categorie accessoires">Accessoires</a></li>
+                    <li><a href="./traveaux.html" title="lien vers la page categorie @outdoor">@utdoor</a></li>
+                    <li><a href="./traveaux.html" title="lien vers la page categorie contact">Mentions legales</a></li>
+                </ul>
+            </nav>
+
+            <div class="footer-horraires large_30" itemtype="http://schema.org/LocalBusiness">
+                <h4>Horaires d’ouverture de nos boutiques</h4>
+
+                <p itemprop="openingHours"> Lundi au Vendredi: 10h-12h30, 13h30-19h<br> Samedi: 9h-18h30<span> non stop</span></p>
+
+                <h4 class="adresse">Adresse et téléphone</h4>
+                <address >
+                    <p itemprop="name">Men Sportswear</p>
+                    <p>Adresse : <span itemprop="address">1 rue de la Liberté </span><span itemprop="postalCode">42100 </span><span itemprop="addressLocality">Saint Etienne</span></p>
+                    <p>Téléphone : <span itemprop="telephone">07 00 00 00 00</span></p>
+                </address>
+            </div>
+              
+            <!-- nav right -->
+            <div class="footer-nav-right large_30">
+                <h4>Retrouvez nous sur les réseaux sociaux</h4>
+                <div class=" footer-reseaux flex ">
+                    <div>
+                        <a href="https://www.facebook.com" title="lien vers la page de Facebook"><img src="./assets/images/imagesSIte/Facebook.png" alt="logo du reseau social Facebook">
+                    </div></a>
+                    <div>
+                        <a href="https://twitter.com" title="lien vers la page de X anciennement Twitter"><img src="./assets/images/imagesSIte/TwitterX.png" alt="logo du reseau social X anciennement Twitter"></a>
+                    </div>
+                    <div>
+                        <a href="https://www.tiktok.com" title="lien vers la page de TikTok"><img src="./assets/images/imagesSIte/TikTok.png" alt="logo du reseau social TikTok"></a>
+                    </div>
+                    <div>
+                        <a href="https://www.instagram.com" title="lien vers la page de Instagram"><img src="./assets/images/imagesSIte/Instagram.png" alt="logo du reseau social Instagram"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- lien fichier java script et attente du chargement html avant js-->
+    <script type="module" src="./assets/js/fonctionsAffichage.js" defer></script>
+    <script src="./node_modules/leaflet/dist/leaflet.js" defer></script>
+    <script type="module" src="./assets/js/categories.js" defer></script>
+</body>
+</html>

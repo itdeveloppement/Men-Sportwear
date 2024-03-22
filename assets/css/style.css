@@ -1,0 +1,1318 @@
+/*NORMELAZIED*/
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/*IMPORT FONT*/
+
+
+/* Luciole-Regular */
+@font-face {
+    font-family: 'Luciole';
+    src: url('../fonts/Luciole_webfonts/Luciole-Regular/Luciole-Regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Luciole_webfonts/Luciole-Regular/Luciole-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Luciole_webfonts/Luciole-Regular/Luciole-Regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/Luciole_webfonts/Luciole-Regular/Luciole-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/Luciole_webfonts/Luciole-Regular/Luciole-Regular.svg#Luciole-Regular') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+/*Font Archivo Black*/
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+/*Font Roboto*/
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+/*VARIABLES COLOR ET STYLE*/
+:root {
+    /*variable color*/
+    --firstOne: #222222;
+    --firstTwo: #0e6286;
+    --firstThree: #ebebeb;
+    --firstFour: #ffffff;
+    --firstFive: #3e8bac;
+    /*variable font*/
+    --robotoFont: "Roboto", sans-serif;
+    --archivoBlackFont: "Archivo Black", sans-serif;
+    --typoAccLuciole:'Luciole', sans-serif;
+    /* border radius*/
+    --borderRadius: border-radius:10px;
+}
+
+/*REGLES GENERALE*/
+
+/* flex box */
+.flex { 
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* font */
+body {
+    font-family: var(--robotoFont);
+}
+.main-index section {
+    margin-bottom: 10%;
+}
+.main-produit section {
+    margin-bottom: 5%;
+}
+h1, h2, h3, h4{
+    font-family: var(--archivoBlackFont);  
+}
+p {
+    font-size: 16px;
+    line-height: 1.3;
+}
+strong {
+    font-weight: inherit;
+}
+/* link */
+a {
+    text-decoration: none;  
+}
+
+/*nav */
+
+/* title */
+h2 {
+    font-weight:800;
+    font-size: 25px ;
+}
+/* boutons*/
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-bleu {
+    width: 200px;
+    height: 30px;
+    color: var(--firstThree);
+    font-weight: bold;
+    background-color: var(--firstTwo);
+}
+.btn-bleu:hover {
+    background-color: var(--firstFive);
+}
+.btn-transparent {
+    height: 35px;
+    color: var(--firstOne);
+    font-weight: bold; 
+    border: 2px solid var(--firstOne);
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+    padding: 10px;
+}
+.btn-transparent:hover {
+    opacity: 0.5;
+}
+.btn-black {
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: var(--firstTwo);
+    font-weight: 600;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+.btn-black:hover {
+    opacity: 0.5;
+}
+/* pre-nav*/
+
+.pre-nav {
+    padding: 0 8%;
+    font-weight: 600;
+}
+.pre-nav div{
+    width: 91%;
+}
+.pre-nav p{
+    width: 9%;
+    font-size: 14px;
+}
+.pre-nav-chaussures {
+background-color: var(--firstOne);
+color: var(--firstThree);
+padding: 5px 20px;
+}
+.pre-nav-baskets {
+    background-color:var(--firstThree);
+    color: var(--firstOne);
+    padding: 5px 20px;
+}
+.pre-nav-libelle {
+    background-color: var(--firstTwo);
+    color: var(--firstThree);
+    padding: 5px 20px;
+}
+
+/* largeur des elements */
+
+.container-1200{
+    max-width: 1200px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.large_15{
+    width: 15%;
+}
+.large_20{
+    width: 20%;
+}
+.large_25{
+    width: 25%;
+}
+.large_30{
+    width: 30%;
+}
+.large_35{
+    width: 35%;
+}
+.large_40{
+    width: 40%;
+}
+.large_45{
+    width: 45%;
+}
+.large_50 {
+    width: 50%;
+}
+
+/*HEADER*/
+.nav-central ul, .nav-right ul  {
+    list-style: none;
+}
+/* nav bar et modale */
+.nav-bar {
+    position: fixed;
+    top:0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4%;
+    height: 70px;
+    z-index: 2;
+    background-color: var(--firstOne);
+    width: 100%;
+}
+.logo img {
+    width: 60px;
+    height: auto; 
+}
+
+/* link*/
+.nav-central a, .nav-height a {
+    color: var(--firstThree);
+    font-weight: bold;
+} 
+/* nav */
+.nav-central li, .nav-height li {
+    padding: 10px 20px;
+    border: 2px solid var(--firstOne); 
+    transition: border 1s ease-in-out; 
+}
+.nav-central li:hover, .nav-height li:hover { 
+    border: 2px solid var(--firstThree);
+}
+/* link*/ 
+.nav-right li, .logo, .nav-bottom li {
+    padding: 0px 10px;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out; 
+}
+/* nav*/ 
+.nav-right ul {
+    padding-right: 40px;
+}
+.nav-right li:hover, .logo:hover, .nav-bottom li:hover { 
+    opacity: 0.7;
+}
+.nav-right img, .nav-bottom img {
+    width: 20px;
+    height: auto; 
+}
+/* burger*/
+.header-burger {
+    display: none;
+}
+
+/* nav chagement de typo */
+#btn-typo {
+    padding: 7px 3px;
+    border: 1px solid var(--firstThree);
+    border-radius: 5px;
+    background-color: var(--firstOne);
+    color: var(--firstThree);
+    font-size: 12px;
+    width: 120px;
+}
+.newTypo {
+    font-family: var(--typoAccLuciole);
+    line-height:1.5 ;
+}
+
+/* modal */
+.header-modal {
+    position: fixed;
+    top: 50px;
+    left: 0px;
+    width: 200px;
+    padding: 8px;
+    height: calc(100vh - 50px);
+    transform: translateX(-200px);
+    z-index: 2;
+    background-color: var(--firstOne);
+    transition: transform 0.8s ease-in-out; 
+}
+.nav-height {
+    margin-top: 20px;
+}
+.nav-bottom ul {
+    list-style: none;
+    padding-left: 4%;
+    gap: 20px;
+    margin-top:30px; 
+}
+.header-modal #btn-typo {
+    display: block;
+    margin: 20px auto;
+}
+
+
+/* SECTION HERO */
+.hero {
+    position: relative;
+}
+.hero-img {
+    background-image: url("../images/imagesSIte/banniere-running.jpg");
+    display: block;
+    background-size:cover;
+    background-repeat:no-repeat;
+    width: 100%;
+    height: 100vh;
+    margin:auto;
+    background-position: center;
+    position: relative;
+    top:70px;
+}
+
+.hero-encart {
+    position: absolute;
+    width: 330px;
+    top: 30%;
+    left: 30%
+}
+.hero-h2 {
+    line-height: 1;
+    margin-bottom: 20px;
+}
+.hero-p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+/* SECTION CATEGORIE*/
+.categorie{
+    padding: 0% 8% 0 8%;
+    justify-content: space-between;
+}
+.categorie img {
+    width: 100%;
+    height: auto;
+}
+.categorie h2 {
+    margin:20px 0 60px 0;
+    width: 100%;
+}
+.categorie h3 {
+    width: 100%;
+    background-color: var(--firstOne);
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--firstThree);
+    padding: 2px;
+}
+.categorie-card-article p {
+    margin: 20px 0;
+}
+.categorie .btn-transparent {
+    white-space: nowrap;
+}
+
+
+/*SECTION OUTDOOR*/
+/* encart*/
+.outdoor {
+    position: relative;
+}
+.outdoor-container-img {
+    background-image: url("../images/imagesSIte/accueil-bg-outdoor.jpg");
+    display: block;
+    background-size:cover;
+    background-repeat:no-repeat;
+    width: 100%;
+    height: 100vh;
+    margin:auto;
+    background-position: center;
+}
+.outdoor-container-img img {
+    width: 100%;
+    height: auto;
+}
+.outdoor-encart {
+    position: absolute;
+    max-width: 500px;
+    top: 20%;
+    left: 8%;
+    
+}
+.outdoor-encart p{
+margin: 20px 0;
+}
+.outdoor .btn-transparent {
+    width: 350px;
+}
+/* nouveaute*/
+.nouveaute {
+    position: absolute;
+    top: 70%;
+    left: 8%; 
+    width: 50%; 
+    border: 1px solid var(--firstOne);
+}
+.nouveaute img{
+    width: 100%;
+    margin: auto;
+  
+}
+.nouveaute-container-img {
+    width: 40%;
+    background-color: var(--firstFour);
+}
+.nouveaute-encart {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+    background-color: var(--firstOne);
+    color: var(--firstThree);
+    padding: 15px;
+}
+.nouveaute-encart p{
+    margin: 0;
+}
+.nouveaute-encart-title {
+    justify-content: space-between;
+    padding-bottom: 10px;
+   
+}
+.nouveaute-encart-title h3{
+    width: 80%;
+    text-transform: uppercase;
+}
+.nouveaute-encart-title p{
+    color: var(--firstTwo);
+    font-weight: 600;
+    font-size: 30px;
+}
+.nouveaute-encart ul {
+    padding: 10px 0 20px 15px;
+}
+.nouveaute-encart li {
+    margin-bottom: 5px; 
+}
+/* SECTION PROMOTION*/
+.promo {
+    padding: 5% 8% 0 8%;
+    justify-content: space-between;
+   
+}
+.promo-encart {
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+    
+}
+.promo-encart p{
+    margin: 0; 
+}
+.promo .btn-transparent {
+    width: 230px;
+    margin-top: 20px;
+}
+.promo-encart p {
+    margin-top: 20px;
+}
+.promo-container-img img {
+    width: 100%;
+    height: auto;
+}
+    /* promo compteur */
+.compteur {
+    margin-top: 30px;
+}
+.compteur-titre {
+    width: 30%;
+    font-weight: 700;
+}
+.compteur-info {
+   color: var(--firstTwo);
+   font-weight: 700;
+   gap:5px
+}
+
+
+/* SECTION MARQUE*/
+
+.marques {
+    padding: 0% 8% 0 8%;
+    background-color: var(--firstOne);
+}
+.marques h3 {
+    padding-top: 10px;
+    color: var(--firstThree);
+}
+
+.marques-container-img img {
+    width: 100%;
+    height: auto;
+}
+.marques-left, .marques-right {
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+}
+.marques-container-img-addidas img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* SECTION CONTACT*/
+.contact {
+    padding: 0% 8% 0 8%;
+    justify-content: space-between;
+}
+.contact-container-img img{
+    width: 100%;
+    height: auto;
+}
+/* formulaire */
+.contact-form p{
+    margin: 0;
+}
+.contact-form h3{
+    margin-bottom: 15px;
+}
+textarea {
+  width: 100%;
+  height: 80px;
+  font-family: var(--robotoFont);
+  font-size: 13px;
+}
+.contact-form label {
+margin: 20px 0 5px 0;
+font-weight: 700;
+}
+.contact-form input, .contact-form select  {
+height: 30px;
+}
+.civilite {
+    justify-content: space-between;
+}
+.civilite div {
+    width: 48%;
+}
+.info div, .civilite div {
+    display: flex;
+    flex-direction: column;
+}
+.info p {
+    font-size: 12px;
+}
+input[type="submit"] {
+    border: none;
+    margin-top: 15px;
+}
+/* message indicatif et erreur */
+.texte-indicatif {
+    color: grey;
+    font-style: italic;
+}
+.input-error{
+    border: 1px solid red;
+    background-color: rgb(240, 235, 235)
+}
+.p-error{
+    color: red; 
+    font-size: 12px;
+    padding-top: 5px;  
+}
+
+.formulaire .astérisque {
+    color: red;
+}
+.info .d-none {
+    display: none;
+}
+/* SECTION ABOUT*/
+.about {
+    padding: 0 8% 0 8%;
+}
+.about h1 {
+    margin-bottom: 40px;
+}
+.about p {
+    margin-bottom: 100px;
+}
+.about span {
+    color:var(--firstFive)
+}
+/* SECTION INFO*/
+.info-commande {
+    justify-content: space-around;
+    padding: 0 8% 0 8%;
+}
+.info-commande h3 {
+    width: 100%;
+    margin-bottom: 40px;
+}
+.info-commande p {    
+    margin-top: 10px;
+    color: var(--firstTwo);font-weight: 600;
+}
+.info-livraison-img {
+    background-image: url("../images/icons/livraison-rapide.png");
+    display: block;
+    background-size: cover;
+    background-repeat:no-repeat;
+    width: 100px;
+    height: 100px;
+    margin:auto;
+}
+.info-paiement-img {
+    background-image: url("../images/icons/paiement-securise.png");
+    display: block;
+    background-size: cover;
+    background-repeat:no-repeat;
+    width: 100px;
+    height: 100px;
+    margin:auto;
+}
+.info-echange-img {
+    background-image: url("../images/icons/double-fleche.png");
+    display: block;
+    background-size: cover;
+    background-repeat:no-repeat;
+    width: 100px;
+    height: 100px;
+    margin:auto;
+}
+/*FOOTER*/
+footer {
+    padding: 0% 8% 8% 8%;
+    background-color: var(--firstOne); 
+}
+.footer-logo, footer>h4, .footer-map {
+    text-align: center;
+}
+/* carte footer */
+#mapid {
+    width: 600px;
+    height: 400px;
+    margin: auto;
+    z-index: -0;
+  }
+
+.footer-logo {
+    padding-top: 15px;
+}
+footer h4 {
+    color: var(--firstThree);
+    padding-bottom: 50px;
+}
+.footer-info {
+    width: 100%;
+    margin-top: 50px;
+    justify-content: space-between;
+    gap:20px;
+}
+.footer-info p {
+    margin: 0;
+}
+.footer-info h4 {
+padding: 0 0 10px 0;
+}
+footer ul {
+    margin-top: 10px;
+    list-style: none;
+}
+footer li {
+    list-style: none;
+    line-height: 1.5;
+}
+footer a {
+    color: var(--firstThree)
+}
+.footer-horraires address {
+    font-style:normal;
+}
+.footer-horraires p {
+    color: var(--firstThree);
+    margin-top: 10px;
+    line-height: 0.8;
+}
+.footer-horraires .adresse{
+    margin-top: 30px;;
+}
+.footer-horraires span{
+    line-height: 1.3;
+    font-size: 16px;
+}
+.footer-horraires>p{
+    line-height: 1.5;
+    font-size: 16px;
+}
+.footer-reseaux {
+    gap:10px;
+    margin-top: 10px;
+}
+.footer-info li, .footer-reseaux div {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+/* nav*/ 
+.footer-info li:hover, .footer-reseaux div:hover { 
+    opacity: 0.7;
+}
+
+/*PAGE PRODUIT*/
+.main-produit p {
+    margin: 0;
+}
+.main-produit .pre-nav {
+    margin: 100px 8px 50px 8px;
+}
+/* info produit */
+.produit-detail {
+    padding: 20px;
+}
+.produit-detail-title {
+    margin-bottom: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+.produit-detail-title p {
+    font-size: 25px;
+}
+.produit-detail ul {
+    padding:20px 0 0 20px
+}
+.produit-detail-title p {
+    color: var(--firstTwo);
+    font-weight: 600;
+    vertical-align: middle;
+}
+.produit-detail-couleur {
+    justify-content: space-between;
+    align-items: center;
+}
+/* produit couleur */
+.produit-detail-couleur>p {
+    font-weight: 600;
+}
+.couleur-point p {
+    font-size: 50px;
+}
+.point-bleu {
+    color: blue;
+}
+.point-violet {
+    color: violet;
+}
+.point-rouge {
+    color: red;
+}
+.point-vert {
+    color: green;
+}
+/* produit taille */
+.produit-taille {
+   justify-content: space-between;
+   margin-bottom: 20px;
+}
+.produit-taille label {
+    font-weight: 600;
+}
+/* produit stock */
+.produit-stock {
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.produit-stock label {
+     font-weight: 600;
+}
+.produit-stock input {
+    width: 36px;
+    border: none;
+    border-radius: 3px;
+}
+/*swipper*/
+.produit {
+    padding: 0 8%;
+    position: relative;
+    height: 100%;
+    justify-content: space-between;
+}
+.slider {
+    position: relative;
+    height: 100%; 
+}  
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* avis */
+.avis {
+    padding: 0 8%;
+}
+.avis article {
+    margin: 0 0 40px 0;
+    align-items: center;
+}
+.avis h3 {
+    margin-bottom: 50px;
+}
+.avis-container-img {
+    background-color: var(--firstOne);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 40px;
+}
+.avis-container-img img{
+   width: 20px;
+   height: auto;
+}
+.avis-info {
+    width: 90%;
+}
+.avis-info div {
+    gap: 5%;
+    margin-bottom: 10px;
+}
+.avis-info div>p {
+    font-weight: 700;
+}
+/*PAGE CATEGORIE*/
+
+.main-categorie .pre-nav {
+    margin: 100px 8px 50px 8px;
+}
+.main-categorie .pre-nav {
+    align-items: center;
+}
+.main-categorie .pre-nav>div {
+    width: 60%;
+}
+.main-categorie .pre-nav p {
+    width: 40%;
+    text-align: end; 
+}
+.categorie-produit {
+    display: flex;
+    margin: 0 5%;
+     
+ }
+.categorie-produit {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: minmax(100px, auto);
+    gap: 20px;
+ }
+.categorie-card {
+  
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 5px grey;
+    transition: transform 0.3s ease; 
+}
+.categorie-card:hover {
+    border: 1px solid rgb(181, 178, 178);
+    transform: scale(1.02); 
+
+}
+.categorie-card-container-img img{
+    width: 100%;
+    height: auto;
+}
+.categorie-card-title {
+    margin-bottom: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+.categorie-card-name {
+    width: 60%;
+    font-weight: 700;
+}
+.categorie-card-prix{
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--firstTwo);
+}
+.categorie-produit a {
+    color: black;
+}
+    /* PRIX ORDONEE */
+#iconPrix {
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    display: inline-block; 
+    background-image: url("../images/imagesSite/double-fleches.png");
+    background-position: center; 
+    background-repeat: no-repeat;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+#iconPrix:hover {
+    opacity: 0.6;
+    
+}
+
+
+/* responsive*/
+
+@media screen and (min-width:955px) and (max-width:1140px) {
+    /* PAGE ACCUEIL */
+    
+    /* header*/
+    .nav-central li {
+        padding: 5px 10px
+    }
+    /* outdoor*/
+    .outdoor-container-img {
+        width: 100%;
+        height: 500px;
+    }
+    /* categorie */
+    .categorie .btn-transparent {
+        font-size: 14px;
+    }
+    /* PAGE CATEGORIE CHAUSSURE */
+    .main-categorie .categorie-card {
+        width: 250px;
+    }
+    .main-categorie .pre-nav {
+        align-items: center;
+    }
+    .main-categorie .pre-nav>div {
+        width: 60%;
+    }
+    .main-categorie .pre-nav p {
+        width: 40%;
+        text-align: end; 
+    }
+    /* PRODUIT */
+    .avis-info {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width:748px) and (max-width:954px){
+
+    /* PAGE ACCUEIL */
+
+    /* header*/
+    .nav-right ul {
+        padding: 0;
+    }
+    .nav-central li {
+        padding: 5px 3px;
+        font-size: 14px;
+    }
+    #btn_typo {
+        font-size: 14px;
+        padding: 0;
+    }
+
+    /* hero */
+    .hero-encart {
+        width: 320px;
+    }
+
+     /* categorie */
+     .categorie .btn-transparent {
+        font-size: 12px;
+    }
+    /* outdoor*/
+    .main-index .outdoor {
+        margin-bottom: 30%;
+    }
+
+    .outdoor-container-img {
+        width: 100%;
+        height: 500px;
+    }
+
+    /* outdoor nouveauté*/
+    .nouveaute {
+        width: 65%;
+        top: 80%;
+    }
+    /* marques*/
+    .marques-left, .marques-right {
+        width: 100%;
+        margin-bottom: 50px;
+
+    }
+    
+    /* PAGE CATEGORIE CHAUSSURE */
+
+    /*categorie chaussure*/
+    .main-categorie .categorie-card {
+        width: 300px;
+    }
+    .main-categorie .pre-nav {
+        align-items: center;
+    }
+    .main-categorie .pre-nav>div {
+        width: 60%;
+    }
+    .main-categorie .pre-nav p {
+        width: 40%;
+        text-align: end; 
+    }
+    /* PRODUIT */
+    .avis-info {
+        width: 80%;
+    }
+ }
+
+@media screen and (min-width:550px) and (max-width:747px){
+
+    /* HEADER */
+
+    .nav-central, .nav-right, .nav-bar #btn-typo {
+        display: none;
+    }
+    .header-modal--is-open {
+        transform: translateX(0); 
+    }
+    .header-burger--is-open {
+        display: block;
+    }
+    /* PAGE ACCUEIL */
+
+    /* hero */
+    .hero {
+        display: none;
+    }
+    /* outdoor*/
+    .outdoor-container-img {
+        width: 100%;
+        height: 400px;
+    }
+    .outdoor-encart {
+        width: 400px;
+    }
+    /* categorie */
+    .categorie {
+        margin-top: 100px;
+    }
+    .categorie .btn-transparent {
+        font-size: 16px;
+    }
+    .categorie-card-article {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    /* outdoor */
+    .outdoor-encart {
+        top:30px
+    }
+    /* outdoor nouveauté*/
+    .nouveaute {
+        position: relative;
+        width: 100%;
+        left: 0;
+        border: none;
+    }
+    .nouveaute-container-img {
+        width: 50%;
+        margin: auto;
+    }
+    .nouveaute-encart {
+        width: 100%;
+        padding: 8%;
+    }
+    /*promo*/
+    .promo .large_50 {
+        width: 100%;
+    }
+    .promo-container-img {
+        order: -1;
+    }
+
+    /* marques*/
+    .marques-logo {
+        flex-direction: column;
+        align-items: center;
+    }
+    .marques-left, .marques-right {
+        flex-direction: column;
+    }
+    .marques-left {
+        margin-top: 40px;
+    }
+    .marques-right {
+        margin-bottom: 40px;
+    }
+    
+    /*contact */
+    .contact {
+        flex-direction: column;
+    }
+    .contact .large_45 {
+        width: 100%;
+    }
+    .contact-container-img {
+        margin-bottom: 40px;
+    }
+
+    /* FOOTER */
+    #mapid {
+        width: 100%;
+    }
+    .footer-info {
+        flex-direction: column;
+    }
+    .footer-nav-left {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .footer-horraires {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .footer-nav-right {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    
+    /* PAGE CATEGORIE CHAUSSURE */
+    .main-categorie .categorie-card {
+        width: 230px;
+    }
+    .main-categorie .pre-nav {
+        align-items: center;
+    }
+    .main-categorie .pre-nav>div {
+        width: 60%;
+    }
+    .main-categorie .pre-nav p {
+        width: 40%;
+        text-align: end; 
+    }
+     /* PRODUIT */
+    .slider {
+        width: 100%;
+    }
+    .produit-detail {
+        width: 100%;
+    }
+    .avis-info {
+        width: 65%;
+    }
+}
+
+@media all and (max-width: 549px) {
+
+    /* HEADER */
+    p { 
+        font-size: 14px;
+    }
+    h2, h1 {
+        font-size: 18px;
+    }
+
+   .nav-central, .nav-right, .nav-bar #btn-typo {
+        display: none;
+    }
+    .header-modal--is-open {
+        transform: translateX(0); 
+    }
+    .header-burger--is-open {
+        display: block;
+    }
+    /* PAGE ACCUEIL */
+
+    /* hero */
+    .hero {
+        display: none;
+    }
+
+    /* categorie */
+    .categorie {
+        margin-top: 100px;
+    }
+    .categorie .btn-transparent {
+        font-size: 12px;
+    }
+    .categorie-card-article {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    /* outdoor */
+    .outdoor-encart {
+        width: 250px;
+        top:10px
+    }
+    /* outdoor */
+    .outdoor-container-img {
+        width: 100%;
+        height: 250px;
+    }
+    .outdoor-encart .btn-transparent {
+        max-width: 90%;
+        font-size: 12px;
+        padding: 0 2px;
+    }
+    /* outdoor nouveauté*/
+    .nouveaute {
+        position: relative;
+        width: 100%;
+        left: 0;
+        border: none;
+    }
+    .nouveaute-container-img {
+        width: 50%;
+        margin: auto;
+    }
+    .nouveaute-encart {
+        width: 100%;
+        padding: 8%;
+    }
+     /*promo*/
+     .promo .large_50 {
+        width: 100%;
+    }
+    .promo-container-img {
+        order: -1;
+    }
+    /* marques*/
+    .marques-logo {
+        flex-direction: column;
+        align-items: center;
+    }
+    .marques-left, .marques-right {
+        flex-direction: column;
+    }
+    .marques-left {
+        margin-top: 40px;
+    }
+    .marques-right {
+        margin-bottom: 40px;
+    }
+    
+    /*contact */
+    .contact {
+        flex-direction: column;
+    }
+    .contact .large_45 {
+        width: 100%;
+    }
+    .contact-container-img {
+        margin-bottom: 40px;
+    }
+    /*service */
+    .info-commande {
+        flex-direction: column;
+        align-items: center;
+    }
+    .info-commande h3 {
+        margin:0;
+    }
+    .info-commande article {
+        margin-top: 40px;
+    }
+    /* FOOTER */
+    #mapid {
+        width: 100%;
+    }
+    .footer-info {
+        flex-direction: column;
+    }
+    .footer-nav-left {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .footer-horraires {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .footer-nav-right {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    /* PAGE CATEGORIE CHAUSSURE */
+    
+    /* PAGE CATEGORIE */
+    .main-categorie .pre-nav>div {
+        width: 70%;
+        
+        
+        align-items: center;
+    }
+    .main-categorie .pre-nav {
+        padding: 0;
+    }
+    .main-categorie .pre-nav p {
+        font-size: 13px;
+        width: 30%; 
+        text-align: end; 
+    }
+    .pre-nav-chaussures, .pre-nav-baskets, .pre-nav-libelle {
+        font-size: 10px;
+        padding: 2px 10px;
+        margin-top: 10px;
+
+    }
+     /* PRODUIT */
+     .slider {
+        width: 100%;
+    }
+    .produit-detail {
+        width: 100%;
+    }
+    .avis-info {
+        width: 65%;
+    }
+    
+}

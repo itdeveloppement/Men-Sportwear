@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- titre max 55/65 caracteres -->
+    <title>Vetements, chaussures et équipement de sport pour homme.</title>
+    <!-- meta description max 160 caracteres -->
+    <meta name="description" content="Les meilleurs produits pour la pratique des activités sportives en interieur et exterieure : vêtements , chaussures et équipements. M’S référence les plus grandes marques et dispose de ces propres atelier depuis 1993.">
+    <!-- url canonical -->
+    <link rel="canonical" href="http://127.0.0.1:5500/index.html" />
+    <!-- link css hambergers-->
+    <link rel="stylesheet" href="./assets/css/hamburgers.css"/>
+    <!-- link css aos-->
+    <link href="./node_modules/aos/dist/aos.css" rel="stylesheet">
+    <!-- link css leaflet carto-->
+    <link rel="stylesheet" href="./node_modules/leaflet/dist/leaflet.css">
+    <!-- link css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- favicon et image à la racine du site-->
+    <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+<body>
+    <!-- HEADER -->
+    <header>
+        <section class="nav-bar flex">
+            <div class="logo">
+                <a href="index.html" title="lien vers la page d'accueil"><img src="./assets/images/imagesSIte/logo-blanc.png" alt="logo de la société Men Sportswear"></a>
+            </div>
+            <!-- nav centrale -->
+            <nav class="nav-central">
+                <ul class="flex">
+                    <li><a href="./index.html" title="lien vers la page accueil">Accueil</a></li>
+                    <li><a href="./categorie.template.html" title="lien vers la page categorie chaussures">Chaussures</a></li>
+                    <li><a href="./traveaux.html" title="lien vers la page categorie vetement">Vetements</a></li>
+                    <li><a href="./traveaux.html" title="lien vers la page categorie accessoires">Accessoires</a></li>
+                    <li><a href="./traveaux.html" title="lien vers la page categorie @outdoor">@utdoor</a></li>
+                </ul>
+            </nav>
+            <!-- nav droite -->
+            <nav class="nav-right flex">
+                <ul class="flex">
+                    <li><a href="./traveaux.html" title="lien vers la page panier"><img src="./assets/images/imagesSIte/header-pannier.png" alt="illustration d'un paneir de commande"></a></li>
+                    <li><a href="./traveaux.html" title="lien vers la page compte"><img class="nav-right__img" src="./assets/images/imagesSIte/header-account.png" alt="illustration d'un compte client"></a></li>
+                </ul>
+                <!-- changer la typo -->
+                <button id="btn-typo" type="button">Changer la typo</button>
+            </nav>
+        <!-- burger import burger Collapse -->
+        <button class="header-burger header-burger--is-open hamburger hamburger--collapse" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+        </button> 
+    </section>
+    <!-- modale menu-->
+    <section class="header-modal">
+        <!-- changer la typo -->
+        <button id="btn-typo" type="button">Changer la typo</button>
+        <!-- nav haut -->
+        <nav class="nav-height">
+            <ul>
+                <li><a href="./index.html" title="lien vers la page accueil">Accueil</a></li>
+                <li><a href="./categorie.template.html" title="lien vers la page categorie chaussures">Chaussures</a></li>
+                <li><a href="./traveaux.html" title="lien vers la page categorie vetement">Vetements</a></li>
+                <li><a href="./traveaux.html" title="lien vers la page categorie accessoires">Accessoires</a></li>
+                <li><a href="./traveaux.html" title="lien vers la page categorie @outdoor">@utdoor</a></li>
+            </ul>
+        </nav>
+        <!-- nav bas -->
+        <nav class="nav-bottom">
+            <ul class="flex">
+                <li><a href="./traveaux.html" title="lien vers la page panier"><img src="./assets/images/imagesSIte/header-pannier.png" alt="illustration d'un paneir de commande"></a></li>
+                <li><a href="./traveaux.html" title="lien vers la page compte"><img class="nav-right__img" src="./assets/images/imagesSIte/header-account.png" alt="illustration d'un compte client"></a></li>
+            </ul>
+        </nav>
+    </section>
+    </header> 
+    <!-- MAIN -->
+    <main class="main-index">
+        <!-- section hero -->
+    <section class="hero">
+        <div class="hero-img">
+            <!-- comment" : plus facile à gerer en background image 
+            <img src="./assets/images/imagesSIte/banniere-running.jpg" alt="un coureur de trail dans la montagne et un insert d'une bascket de course à pied "> -->
+        </div>
+        <div class="hero-encart">
+            <h2 class="hero-h2">Ne cherchez plus <strong>chaussure</strong> à votre pied</h2>
+            <p class="hero-p">Decouvrer notre toute nouvelle <strong>gamme de basckets</strong> M'S declinée en 4 coloris</p>
+            <a class="btn btn-bleu" href="produit.template.html" title="lien vers la pages des categories de chaussures">Decouvrer la gamme</a>
+        </div>
+    </section>
+    <!-- section produit par categorie -->
+    <section class="categorie flex">
+        <h2>Nos produits par categories</h2>
+        <!-- cards chaussures -->
+        <article class="categorie-card-article large_30">
+            <h3>chaussures</h3>
+            <div>
+                <img src="./assets/images/imagesSIte/categorie-chaussures.jpg" alt="vue de l'arriere sur les jambes, les molets et les chaussures 'un coureur à pied sur la route">
+            </div>
+            <p>Basckets, <strong>chaussures de montagnes, chaussures hautes, chaussurec basses</strong>, ... partez bien équipés</p>
+            <a class="btn btn-transparent" href="categorie.template.html" title="lien vers la pages des categories de chaussures">Voir les modeles de chaussures</a>
+        </article>
+        <!-- cards accessoires -->
+        <article class="categorie-card-article large_30">
+            <h3>acessoires</h3>
+            <img src="./assets/images/imagesSIte/categorie-accessoires.jpg" alt="une personne dans la montagne avec un sac à dos de montagne, entrain de photographier">
+            <p><strong>Sac à dos de randonnées, toiles de tente, réchauds</strong>, matériel de sport interieur et exterieur</p>
+            <a class="btn btn-transparent" href="./traveaux.html" title="lien vers la pages des categories d'accessoires">Voir les accessoires</a>
+        </article>
+        <!-- cards vetement -->
+        <article class="categorie-card-article large_30">
+            <h3>vetements</h3>
+            <img src="./assets/images/imagesSIte/categorie-vetements.jpg" alt="une personne sportive en short noir et en tishirt blanc qui fait un étirement de jambe à coté d'une barriere en ville">
+            <p>Vêtements tous sports, <strong>jogging, shorts, tee-shirts , hoodies, vestes, chaussettes et débardeurs</strong></p>
+            <a class="btn btn-transparent" href="./traveaux.html" title="lien vers la pages des categories de vetements">Voir les modèles de vetements</a>
+        </article>
+    </section>
+    <!-- section gamme outdoor -->
+    <section class="outdoor">
+        <div class="outdoor-container-img">
+            <!-- comenté : plus facile a gerer en backround image -->
+           <!-- <img src="./assets/images/imagesSIte/accueil-bg-outdoor.jpg" alt="un randonneur équipé d'un short, d'une polaire et d'un sac à dos assit sur un rocher et qui contemple la montagne "> -->
+        </div>
+        <div class="outdoor-encart">
+            <h2>Découvrez notre gamme @utdoor</h2>
+            <p>Une sélection parmis les vêtements techniques de notre fabrication ainsi que des  <strong>meilleures marques sur le marché</strong></p>
+            <a class="btn btn-transparent" href="./traveaux.html" title="lien vers la pages des articles de la gamme @outdoor">Voir les articles de la<strong> gamme @utdoor</strong></a>
+        </div>
+        
+        <!-- article nouveaute -->
+        <article class="nouveaute flex" data-aos="zoom-in"  data-aos-duration="3000">
+            <div class="nouveaute-container-img flex">
+                <img src="assets/images/imagesSIte/outdoor6.jpg" alt=" produits tshirt technique manche courte, manche bleu et torse noir ">
+            </div>
+            <div class="nouveaute-encart">
+                <div class="nouveaute-encart-title flex">
+                    <h3>nouveaute</h3>
+                    <p>40€</p>
+                </div>
+                <p><strong>Tee shirt technique rando+</strong> , résistant , confortable, tissus déperlant</p>
+                <ul>
+                    <li><p>Respirabilité</p></li>
+                    <li><p>Imperméabilité</p></li>
+                    <li><p>Anti odeurs</p></li>
+                </ul>
+                <a class="btn-black" href="./traveaux.html" title="lien vers la page du détail du produit">Voir le détail du produit</a>
+            </div>
+        </article>
+    </section>
+
+    <!-- section promotion -->
+    <section class="promo flex">
+        <div class="promo-encart large_50">
+            <h3><strong>Profitez de l’offre</strong></h3>
+            <p>L’ensembe jogging M’S noir disponible en plusieurs tailles</p>
+            <p>Ce jogging alie confort légereté et douceur, pour du sport a l’exterieur comme pour les moments de détente a la maison</p>
+            <a class="btn btn-transparent" href="./traveaux.html" title="lien vers la page du détail du produit">Voir le détail du produit</a>
+            <div class="compteur flex">
+            <!-- 
+                <p>Plus que</p>
+                <div class="compteur-info flex">
+                <p class="compteur-jours">${duree.jours} jour </p>
+                <p class="compteur-heures">${duree.heures} heure</p>
+                <p class="compteur-minutes">${duree.minutes} minutes</p>
+                <p class="compteur-secondes">${duree.secondes} secondes</p>
+            </div> -->
+            </div>
+        </div >
+
+        <div class="promo-container-img large_50">
+            <img src="./assets/images/imagesSIte/Joogin-promo.jpg" alt="">
+        </div>
+    </section>
+    
+    <!-- section marques -->
+    <section class="marques">
+        <h3>Ces marques nous font confiance </h3>
+        <div class="marques-logo flex">
+            <div class="marques-left flex">
+                <div class="marques-container-img">
+                    <img src="./assets/images/imagesSIte/the-north-face.png" alt="logo de la société North Face">
+                </div>
+                <div class="marques-container-img">
+                    <img src="./assets/images/imagesSIte/puma.png" alt="logo de la société Puma">
+                </div>
+            </div>
+            <div class="marques-right flex">
+                <div class="marques-container-img  marques-container-img-addidas">
+                    <img src="./assets/images/imagesSIte/adidas.png" alt="Logo de la société Adidas">
+                </div>
+                <div class="marques-container-img">
+                    <img src="./assets/images/imagesSIte/nike.png" alt="Logo de la société Nike">
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- section about M'S-->
+     <section class="about">
+        <h1><span>Men Sportswear</span> est le <span>specialiste</span> des vêtements, chaussures et équipements de sports pour hommes.</h1>
+        <p>Nous avons pour ambition de vous fournir le meilleur pour la pratique de vos <span><strong>activités sportives</strong> en intérieur comme en extérieur.</span><br> Nous proposons une large <strong>gamme de <span>vêtements, chaussures et équipements pour hommes.</span></strong><br> Nous travaillons avec <strong>les plus grandes marques</strong> et nous disposons de nos propres ateliers de fabrication.<br> Notre nouvelle gamme de produits @utdoor pour les <strong>activités de plein air</strong>, allient <span>confort, respirabilité et protection</span> grâce a nos matériaux à la pointe de la technologie textile.</p>
+     </section>
+    <!-- section contact -->
+    <section class="contact flex">
+        <div class="contact-container-img large_45">
+            <img src="./assets/images/imagesSIte/illustration-boxe.jpg" alt="une personne en short et en tchirt technique entrain de sauter pour frapper avec son pied un coussin de frappe de box">
+        </div>
+        <div class="contact-form large_45">
+            <h3>Contactez - nous</h3>
+            <p>Pour des informations sur nos produits, pour toute demande de renseignement ou pour nous faire remonter un problème techique sur le site , merci de remplir le formulaire suivant</p>
+            <form class="formulaire" action="" method="GET" id="monform" novalidate>
+                <!-- champs non type text -->
+                <div class="civilite flex">
+                    <div>
+                        <label for="nom">Nom<span class="astérisque">*</span></label>
+                        <input class="" type="text" name="nom" id="nom" placeholder="Votre nom">
+                        <p class="p-error d-none" id="error-nom"></p>
+                    </div>
+                    <!-- prenom non type text -->
+                    <div>
+                        <label for="prenom">Prénom<span class="astérisque">*</span></label>
+                        <input class="" type="text" name="prenom" id="prenom" placeholder="Votre prenom">
+                        <p class="p-error d-none" id="error-prenom"></p>
+                    </div>
+                </div>
+                <!-- adresse email type email-->
+                <div class="info">
+                    <div>
+                        <label for="email">Adresse e-mail :<span class="astérisque">*</span></label>
+                        <input type="email" id="email" name="email" placeholder="exemple@exemle.exemple">
+                        <p class="p-error d-none" id="error-email"></p>
+                    </div>
+                    <!-- champs objet -->
+                    <div>
+                        <label for="objet">Objet<span class="astérisque">*</span></label>
+                        <select name="objet" id="objet">
+                            <option value="">Choisissez un objet</option>
+                            <option value="information-generale">Demande d’informations générales</option>
+                            <option value="probleme-site">Signaler un problème sur le site</option>
+                            <option value="information-produit">Demande d’information sur un produit</option>
+                            <option value="probleme-produit">Signaler  un problème sur un produit</option>
+                        </select>
+                        <p class="p-error d-none" id="error-objet"></p>
+                        <!-- refrence produit -->
+                        <div class="refProduit d-none">
+                            <label  for="reference-produit">Reference du produit<span class="astérisque">*</span></label>
+                            <input type="text" id="reference-produit" name="reference-produit" placeholder="XXX-000000">
+                            <p class="p-error d-none" id="error-reference-produit"></p>
+                        </div>
+                    </div>
+                    <!-- message -->
+                    <div>
+                        <label for="message">Votre message<span class="astérisque">*</span><span id="long"></span></label>
+                        <textarea name="message" id="message" placeholder="Votre message"></textarea>
+                        <p class="p-error d-none" id="error-message" ></p>
+                    </div>
+                </div>
+                <input class="btn btn-bleu"type="submit" value="Envoyer votre message">  
+            </form>
+        </div>
+    </section>
+    <section class="info-commande flex">
+        <h3>Nos services </h3>
+        <article>
+            <span class="info-livraison-img"></span>
+            <p>Livraion gratuite</p>
+        </article>
+        <article>
+            <span class="info-paiement-img"></span>
+            <p>Paiement securisé</p>
+        </article>
+        <article>
+            <span class="info-echange-img"></span>
+            <p>Echange sous 30 jours</p>
+        </article>
+    </section>
+    </main>
+    <!-- FOOTER -->
+    <footer >
+        <div class="footer-logo">
+            <a href="./index.html"><img src="./assets/images/imagesSIte/logo-blanc.png" alt="logo de la société Men Sportswear"></a>
+        </div>
+        <h4>Retrouvez nos boutiques près de chez vous</h4>
+        <!-- insertion carte -->
+        <div id="mapid"></div> 
+        <div class=" footer-info flex">
+            <!-- nav left -->
+            <nav class="footer-nav-left large_30">
+                <h4>Plan du site</h4>
+                <ul>
+                    <li><a href="./index.html" title="lien vers la page accueil">Accueil</a></li>
+                    <li><a href="./categorie.template.html" title="lien vers la page categorie chaussures">Chaussures</a></li>
+                    <li><a href="./traveaux.html" title="lien vers la page categorie vetement">Vetements</a></li>
+                    <li><a href="./traveaux.html" title="lien vers la page categorie accessoires">Accessoires</a></li>
+                    <li><a href="./traveaux.html" title="lien vers la page categorie @outdoor">@utdoor</a></li>
+                    <li><a href="./traveaux.html" title="lien vers la page categorie contact">Mentions legales</a></li>
+                </ul>
+            </nav>
+
+            <div class="footer-horraires large_30" itemtype="http://schema.org/LocalBusiness">
+                <h4>Horaires d’ouverture de nos boutiques</h4>
+
+                <p itemprop="openingHours"> Lundi au Vendredi: 10h-12h30, 13h30-19h<br> Samedi: 9h-18h30<span> non stop</span></p>
+
+                <h4 class="adresse">Adresse et téléphone</h4>
+                <address >
+                    <p itemprop="name">Men Sportswear</p>
+                    <p>Adresse : <span itemprop="address">1 rue de la Liberté </span><span itemprop="postalCode">42100 </span><span itemprop="addressLocality">Saint Etienne</span></p>
+                    <p>Téléphone : <span itemprop="telephone">07 00 00 00 00</span></p>
+                </address>
+            </div>
+              
+            <!-- nav right -->
+            <div class="footer-nav-right large_30">
+                <h4>Retrouvez nous sur les réseaux sociaux</h4>
+                <div class=" footer-reseaux flex ">
+                    <div>
+                        <a href="https://www.facebook.com" title="lien vers la page de Facebook"><img src="./assets/images/imagesSIte/Facebook.png" alt="logo du reseau social Facebook">
+                    </div></a>
+                    <div>
+                        <a href="https://twitter.com" title="lien vers la page de X anciennement Twitter"><img src="./assets/images/imagesSIte/TwitterX.png" alt="logo du reseau social X anciennement Twitter"></a>
+                    </div>
+                    <div>
+                        <a href="https://www.tiktok.com" title="lien vers la page de TikTok"><img src="./assets/images/imagesSIte/TikTok.png" alt="logo du reseau social TikTok"></a>
+                    </div>
+                    <div>
+                        <a href="https://www.instagram.com" title="lien vers la page de Instagram"><img src="./assets/images/imagesSIte/Instagram.png" alt="logo du reseau social Instagram"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- lien fichier java script et attente du chargement html avant js-->
+    <script type="module" src="./assets/js/fonctionsAffichage.js" defer></script>
+    <script src="./node_modules/aos/dist/aos.js" defer></script>
+    <script src="./node_modules/leaflet/dist/leaflet.js" defer></script>
+    <script type="module" src="./assets/js/app.js" defer></script>
+</body>
+</html>
