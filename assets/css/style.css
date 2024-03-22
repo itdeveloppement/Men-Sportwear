@@ -80,7 +80,8 @@ a {
 /* title */
 h2 {
     font-weight:800;
-    font-size: 25px ;
+    font-size: 30px ;
+    width: 100%;
 }
 /* boutons*/
 .btn {
@@ -303,17 +304,19 @@ padding: 5px 20px;
 
 .hero-encart {
     position: absolute;
-    width: 330px;
+    width: 680px;
     top: 30%;
-    left: 30%
+    left: 20%
 }
 .hero-h2 {
     line-height: 1;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    font-size: 50px;
 }
 .hero-p {
     font-size: 18px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    font-size: 30px;
 }
 /* SECTION CATEGORIE*/
 .categorie{
@@ -365,13 +368,13 @@ padding: 5px 20px;
 }
 .outdoor-encart {
     position: absolute;
-    max-width: 500px;
+    max-width: 540px;
     top: 20%;
     left: 8%;
     
 }
 .outdoor-encart p{
-margin: 20px 0;
+margin: 40px 0;
 }
 .outdoor .btn-transparent {
     width: 350px;
@@ -434,18 +437,20 @@ margin: 20px 0;
 .promo-encart {
     display: flex;
     flex-direction: column;
-   justify-content: center;
-    
+    justify-content: center;
 }
 .promo-encart p{
     margin: 0; 
 }
+.promo-para-weight {
+    font-weight: 600;
+}
 .promo .btn-transparent {
     width: 230px;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 .promo-encart p {
-    margin-top: 20px;
+    margin-top: 30px;
 }
 .promo-container-img img {
     width: 100%;
@@ -453,16 +458,19 @@ margin: 20px 0;
 }
     /* promo compteur */
 .compteur {
-    margin-top: 30px;
+    margin-top: 20px;
 }
 .compteur-titre {
-    width: 30%;
     font-weight: 700;
 }
 .compteur-info {
    color: var(--firstTwo);
    font-weight: 700;
    gap:5px
+}
+.compteur-info p {
+    margin-top: 3px;
+    padding: 0 5px;
 }
 
 
@@ -472,7 +480,7 @@ margin: 20px 0;
     padding: 0% 8% 0 8%;
     background-color: var(--firstOne);
 }
-.marques h3 {
+.marques h2 {
     padding-top: 10px;
     color: var(--firstThree);
 }
@@ -500,6 +508,9 @@ margin: 20px 0;
 .contact-container-img img{
     width: 100%;
     height: auto;
+}
+.contact h2 {
+    margin-bottom: 20px;
 }
 /* formulaire */
 .contact-form p{
@@ -577,8 +588,7 @@ input[type="submit"] {
     justify-content: space-around;
     padding: 0 8% 0 8%;
 }
-.info-commande h3 {
-    width: 100%;
+.info-commande h2 {
     margin-bottom: 40px;
 }
 .info-commande p {    
@@ -963,6 +973,23 @@ footer a {
         width: 320px;
     }
 
+    .hero-encart {
+        position: absolute;
+        width: 680px;
+        top: 30%;
+        left: 10%
+    }
+    .hero-h2 {
+        line-height: 1;
+        margin-bottom: 30px;
+        font-size: 50px;
+    }
+    .hero-p {
+        font-size: 18px;
+        margin-bottom: 30px;
+        font-size: 30px;
+    }
+
      /* categorie */
      .categorie .btn-transparent {
         font-size: 12px;
@@ -1255,9 +1282,7 @@ footer a {
         flex-direction: column;
         align-items: center;
     }
-    .info-commande h3 {
-        margin:0;
-    }
+
     .info-commande article {
         margin-top: 40px;
     }

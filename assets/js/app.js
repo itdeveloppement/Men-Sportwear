@@ -369,7 +369,7 @@ function formatRefProduit (value){
 // declaration const globale - date de fin de promotion
 const annee = 2024;
 const mois = 4;
-const jour = 10;
+const jour = 31;
 const heure = 12;
 const minute = 0;
 const seconde = 0;
@@ -386,16 +386,16 @@ function affichageDelais () {
     let compteurPromo = document.querySelector(".compteur");
     let template = '';
     template = `
-        <p class="compteur-titre">Plus que : </p>
+        <p class="compteur-titre">Il ne vous reste plus que : </p>
         <div class="compteur-info flex">
             <div class="flex">
-                <p class="compteur-jours">${duree.jours} jour(s) | </p>
-                <p class="compteur-heures">${duree.heures} heure(s) | </p>
+                <p class="compteur-jours">${duree.jours} jours | </p>
+                <p class="compteur-heures">${duree.heures} heures | </p>
             <div>
             <div class="flex">
-                <p class="compteur-minutes">${duree.minutes} minute(s) | </p>
-                <p class="compteur-secondes">${duree.secondes} seconde(s)</p>
-            <div>
+                <p class="compteur-minutes">${duree.minutes} minutes | </p>
+                <p class="compteur-secondes">${duree.secondes} secondes</p>
+            </div>
         </div>
     `;
     compteurPromo.innerHTML = template;
